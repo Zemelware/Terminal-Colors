@@ -42,4 +42,4 @@ Pull requests are welcome. If you want add more ANSI color codes to the main pyt
 
 ## License
 
-This project is licensed under the MIT License - look at the [LICENSE.md]("https://github.com/Zemelware/Terminal-Colors/blob/master/LICENSE") file for details
+This project is licensed under the MIT License - look at the [LICENSE.md](https://github.com/Zemelware/Terminal-Colors/blob/master/LICENSE) file for details
