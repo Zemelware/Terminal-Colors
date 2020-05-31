@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-END = '\33[0m'
 BOLD = '\33[1m'
 ITALIC = '\33[3m'
 UNDERLINE = '\33[4m'
@@ -34,8 +33,8 @@ YELLOWBG = '\33[43m'
 YELLOWBG2 = '\33[103m'
 BLUEBG = '\33[44m'
 BLUEBG2 = '\33[104m'
-VIOLETBG = '\33[45m'
-VIOLETBG2 = '\33[105m'
+PURPLEBG = '\33[45m'
+PURPLEBG2 = '\33[105m'
 BEIGEBG = '\33[46m'
 BEIGEBG2 = '\33[106m'
 WHITEBG = '\33[47m'
@@ -45,4 +44,6 @@ WHITEBG2 = '\33[107m'
 def printColor(text, *styles):
     for i in styles:
         print(i, end="")
+
+    END = '\33[0m'
     print(text + END)
