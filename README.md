@@ -18,7 +18,7 @@ Drag "TerminalColors.py" into the same folder as your python script, then import
 from TerminalColors import *
 ```
 
-Use the "printColor" function to print text that can be stylized with color and other styles (eg. bold, italics, etc.)
+Use the "printColor" function to print text that can be stylized with color and other styles (eg. bold, italics, etc.). The "inputColor" function is used to add color to input text, and is used the same way as the printColor function.
 
 ```py
 printColor(text, *styles)
