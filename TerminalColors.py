@@ -9,41 +9,49 @@ INVERT = '\33[7m'
 BLACK = '\33[30m'
 GREY = '\33[90m'
 RED = '\33[31m'
-RED2 = '\33[91m'
+REDLIGHT = '\33[91m'
 GREEN = '\33[32m'
-GREEN2 = '\33[92m'
+GREENLIGHT = '\33[92m'
 YELLOW = '\33[33m'
-YELLOW2 = '\33[93m'
+YELLOWLIGHT = '\33[93m'
 BLUE = '\33[34m'
-BLUE2 = '\33[94m'
+BLUELIGHT = '\33[94m'
 PURPLE = '\33[35m'
-PURPLE2 = '\33[95m'
-BEIGE = '\33[36m'
-BEIGE2 = '\33[96m'
+PURPLELIGHT = '\33[95m'
+CYAN = '\33[36m'
+CYANLIGHT = '\33[96m'
 WHITE = '\33[37m'
-WHITE2 = '\33[97m'
+WHITELIGHT = '\33[97m'
 
 BLACKBG = '\33[40m'
 GREYBG = '\33[100m'
 REDBG = '\33[41m'
-REDBG2 = '\33[101m'
+REDBGLIGHT = '\33[101m'
 GREENBG = '\33[42m'
-GREENBG2 = '\33[102m'
+GREENBGLIGHT = '\33[102m'
 YELLOWBG = '\33[43m'
-YELLOWBG2 = '\33[103m'
+YELLOWBGLIGHT = '\33[103m'
 BLUEBG = '\33[44m'
-BLUEBG2 = '\33[104m'
+BLUEBGLIGHT = '\33[104m'
 PURPLEBG = '\33[45m'
-PURPLEBG2 = '\33[105m'
-BEIGEBG = '\33[46m'
-BEIGEBG2 = '\33[106m'
+PURPLEBGLIGHT = '\33[105m'
+CYANBG = '\33[46m'
+CYANBGLIGHT = '\33[106m'
 WHITEBG = '\33[47m'
-WHITEBG2 = '\33[107m'
+WHITEBGLIGHT = '\33[107m'
 
 
 def printColor(text, *styles):
-    for i in styles:
-        print(i, end="")
+    for style in styles:
+        print(style, end="")
 
     END = '\33[0m'
-    print(text + END)
+    print(str(text) + END)
+
+
+def inputColor(text, *styles):
+    for style in styles:
+        print(style, end="")
+
+    END = '\33[0m'
+    input(str(text) + END)
